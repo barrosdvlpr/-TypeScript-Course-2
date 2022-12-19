@@ -6,3 +6,15 @@ export default function Home() {
     </div>
   )
 }
+
+function handler(eventType: `on${string}`){
+  console.log(`handling${eventType}`)
+}
+
+handler("onClick")
+handler("onKeydown")
+handler("onKeyup")
+handler("onEnter")
+
+handler("oncliker")
+// handler("escapeey")
