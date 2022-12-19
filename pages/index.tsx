@@ -6,3 +6,19 @@ export default function Home() {
     </div>
   )
 }
+
+
+const user = {
+  name: 'John',
+  age: 27,
+}
+
+type User = typeof user
+
+const user2: User = {
+  name: 'John',
+  age: 27,
+}
+
+console.log(user)
+console.log(user2)
