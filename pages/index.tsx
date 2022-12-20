@@ -7,17 +7,20 @@ export default function Home() {
   )
 }
 
-type Some = {
-  something: () => void
-  
+// type AgesType = {
+//   [name: string]: number;
+
+// }
+
+type NamesType = "Jonh Doe" | "Jane Doe" | "baby Doe" | "Jannie Doe"
+
+type AgesType = Record<NamesType, number>;
+
+const ages: AgesType = {
+  "Jonh Doe": 29,
+  "Jane Doe": 25,
+  "baby Doe": 5,
+  "Jannie Doe": 50,
 }
 
-function log(val: unknown) {
-  if (typeof val === "string") {
-    console.log(val.toUpperCase())
-  }
-  console.log((val as number) + 20)
-  console.log((val as Some).something())
-}
-
-log(5)
+console.log(ages)
