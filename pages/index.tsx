@@ -9,6 +9,7 @@ export default function Home() {
 
 // type AgesType = {
 //   [name: string]: number;
+
 // }
 
 type NamesType = "Jonh Doe" | "Jane Doe" | "baby Doe" | "Jannie Doe"
