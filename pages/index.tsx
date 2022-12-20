@@ -7,18 +7,17 @@ export default function Home() {
   )
 }
 
-type User = {
-  name: string;
-  age: number;
-  profession?: string;
-}
-
-const user: User = {
+const user = {
   name: 'John',
   age: 27,
-  profession: 'Engineer'
 }
 
-const output: string = user.profession!
+type User = typeof user
 
-console.log(output)
+const user2: User = {
+  name: 'John',
+  age: 27,
+}
+
+console.log(user)
+console.log(user2)
