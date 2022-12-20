@@ -7,20 +7,31 @@ export default function Home() {
   )
 }
 
-// type AgesType = {
-//   [name: string]: number;
-
-// }
-
-type NamesType = "Jonh Doe" | "Jane Doe" | "baby Doe" | "Jannie Doe"
-
-type AgesType = Record<NamesType, number>;
-
-const ages: AgesType = {
-  "Jonh Doe": 29,
-  "Jane Doe": 25,
-  "baby Doe": 5,
-  "Jannie Doe": 50,
+type Box<T> = {
+  name: string;
+  content: T;
 }
 
-console.log(ages)
+// type Box = {
+//   name: string;
+//   content: unknown;
+// }
+
+// type NumberBox = {
+//   name: string;
+//   content: number;
+// }
+
+const stringBox: Box<string> = {
+  name: 'String Box',
+  content: 'A string',
+}
+
+const numberBox: Box<number> = {
+  name: 'String Box',
+  content: 50,
+}
+
+console.log(stringBox.content.toLocaleUpperCase())
+
+console.log(numberBox.content * 5)
