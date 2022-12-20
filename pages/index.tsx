@@ -20,5 +20,4 @@ const user: Required<User> = {
   age: 23,
   gender:"male",
 }
-
 console.log(user)
