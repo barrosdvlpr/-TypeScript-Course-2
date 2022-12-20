@@ -7,17 +7,30 @@ export default function Home() {
   )
 }
 
-
-type User = {
+type Item = {
   name: string;
-  age?: number;
-  gender?: string;
+  description: string;
+  price: number;
+  currency: string;
+  image: string;
+}
+
+type ItemPreview = Pick<Item, "name" | "image">
+
+const item: Item = {
+  name: "Macbook",
+  description: "Macbook Pro",
+  price: 3923,
+  currency: "USD",
+  image: "https://cdn.apple.com/mbpro.png"
+}
+
+const ItemPreview: ItemPreview ={
+  name: item.name,
+  image: item.image,
 }
 
 
-const user: Required<User> = {
-  name:"jonh Doe",
-  age: 23,
-  gender:"male",
-}
-console.log(user)
+console.log(ItemPreview)
+
+console.log(item)
