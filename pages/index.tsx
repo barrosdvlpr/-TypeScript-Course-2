@@ -21,6 +21,7 @@ const item: PricelessItem = {
   description: "Leather Bag for laptop",
   // price: 34,
   // currency: "USD",
+  
 }
 
 console.log(item);
