@@ -31,6 +31,7 @@ const user = {
 // user.education = {
 //   degree: "IT"
 // }
+
 // user.education.degree = "IT"
 // user.skills = ["Building"]
 // user.skills.push("Deploying")
