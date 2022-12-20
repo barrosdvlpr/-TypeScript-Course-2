@@ -7,13 +7,17 @@ export default function Home() {
   )
 }
 
-class Person {
-  // name: string;
-  constructor(public name: string){
-    // this.name = name;
-  }
+type Some = {
+  something: () => void
+  
 }
 
-const jonhDoe = new Person("Jonh Doe")
+function log(val: unknown) {
+  if (typeof val === "string") {
+    console.log(val.toUpperCase())
+  }
+  console.log((val as number) + 20)
+  console.log((val as Some).something())
+}
 
-console.log(jonhDoe.name)
+log(5)
