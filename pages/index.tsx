@@ -7,15 +7,13 @@ export default function Home() {
   )
 }
 
-function handler(eventType: `on${string}`){
-  console.log(`handling${eventType}`)
-  
+class Person {
+  // name: string;
+  constructor(public name: string){
+    // this.name = name;
+  }
 }
 
-handler("onClick")
-handler("onKeydown")
-handler("onKeyup")
-handler("onEnter")
+const jonhDoe = new Person("Jonh Doe")
 
-handler("oncliker")
-// handler("escapeey")
+console.log(jonhDoe.name)
