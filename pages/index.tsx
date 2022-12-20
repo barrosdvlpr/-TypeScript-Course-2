@@ -7,7 +7,6 @@ export default function Home() {
   )
 }
 
-
 type User = {
   name: string;
   age: number;
