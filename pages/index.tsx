@@ -8,32 +8,17 @@ export default function Home() {
 }
 
 type User = {
-  readonly name: string;
-  readonly age: number;
-  readonly education: {
-    readonly degree: string
-  }
-  skills: ReadonlyArray<string>;
+  name: string;
+  age: number;
+  profession?: string;
 }
 
-const user = {
-  name: 'John Doe',
-  age: 26,
-  education: {
-    degree: "SE"
-  },
-  skills: ["JavaScript", "TypeScript"]
-  
+const user: User = {
+  name: 'John',
+  age: 27,
+  profession: 'Engineer'
 }
 
-// user.name = 'John Doe';
-// user.age = 22;
-// user.education = {
-//   degree: "IT"
-// }
+const output: string = user.profession!
 
-// user.education.degree = "IT"
-// user.skills = ["Building"]
-// user.skills.push("Deploying")
-
-console.log(user)
+console.log(output)
