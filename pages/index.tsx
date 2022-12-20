@@ -33,4 +33,5 @@ const numberBox: Box<number> = {
 }
 
 console.log(stringBox.content.toLocaleUpperCase())
+
 console.log(numberBox.content * 5)
