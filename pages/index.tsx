@@ -9,6 +9,7 @@ export default function Home() {
 
 function handler(eventType: `on${string}`){
   console.log(`handling${eventType}`)
+  
 }
 
 handler("onClick")
