@@ -12,25 +12,16 @@ type Item = {
   description: string;
   price: number;
   currency: string;
-  image: string;
 }
 
-type ItemPreview = Pick<Item, "name" | "image">
+type PricelessItem = Omit<Item, "price" | "currency">
 
-const item: Item = {
-  name: "Macbook",
-  description: "Macbook Pro",
-  price: 3923,
-  currency: "USD",
-  image: "https://cdn.apple.com/mbpro.png"
+const item: PricelessItem = {
+  name: "laptop Bag",
+  description: "Leather Bag for laptop",
+  // price: 34,
+  // currency: "USD",
+  
 }
 
-const ItemPreview: ItemPreview ={
-  name: item.name,
-  image: item.image,
-}
-
-
-console.log(ItemPreview)
-
-console.log(item)
+console.log(item);
