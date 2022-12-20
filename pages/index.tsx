@@ -9,6 +9,7 @@ export default function Home() {
 
 type Some = {
   something: () => void
+  
 }
 
 function log(val: unknown) {
