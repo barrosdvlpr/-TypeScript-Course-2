@@ -7,17 +7,15 @@ export default function Home() {
   )
 }
 
-const user = {
-  name: 'John',
-  age: 27,
+function handler(eventType: `on${string}`){
+  console.log(`handling${eventType}`)
+  
 }
 
-type User = typeof user
+handler("onClick")
+handler("onKeydown")
+handler("onKeyup")
+handler("onEnter")
 
-const user2: User = {
-  name: 'John',
-  age: 27,
-}
-
-console.log(user)
-console.log(user2)
+handler("oncliker")
+// handler("escapeey")
