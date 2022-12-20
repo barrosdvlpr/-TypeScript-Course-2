@@ -15,4 +15,5 @@ class Person {
 }
 
 const jonhDoe = new Person("Jonh Doe")
+
 console.log(jonhDoe.name)
