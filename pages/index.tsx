@@ -30,6 +30,7 @@ const ItemPreview: ItemPreview ={
   image: item.image,
 }
 
+
 console.log(ItemPreview)
 
 console.log(item)
